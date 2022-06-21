@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سیستم مدیریت فروش کتاب</title>
+    <link rel="stylesheet" href="css/bulma-rtl.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar has-shadow is-light" dir="ltr">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>سیستم مدیریت فروش کتاب</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        ashkan_mataee
+                    </div>
+                    <div class="navbar-dropdown">
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>پروفایل</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>گزارشات</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>خروج</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <Section class="section" dir="ltr">
+        <div class="columns">
+            <!-- main menu start -->
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <nav class="menu" dir="rtl">
+                    <p class="menu-label">
+                        منوی اصلی
+                    </p>
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="dashbord.html">
+                                <span class="icon">
+                                    <i class="fas fa-digital-tachograph"></i>
+                                </span>
+                                داشبورد
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="books.html" >
+                                <span class="icon">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                                کتاب ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="customers.html" class="is-active">
+                                <span class="icon">
+                                    <i class="fas fa-address-book"></i>
+                                </span>
+                                مشتری ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="orders.html">
+                                <span class="icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                سفارشات
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- main menu end -->
+
+           
+            <div class="column">
+                
+                <nav class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="customers.html">مشتریان</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="new-customer.html">مشتری جدید</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <form dir="rtl">
+
+                    <div class="field">
+                        <label class="label">نام و نام خانوادگی</label>
+                        <div class="control">
+                            <input type="text" class="input is-large" placeholder="مثال اشکان مطاعی " required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">ایمیل</label>
+                        <div class="control has-icons-left">
+                            <input type="email" class="input" placeholder="مثال ashka.mataee@yahoo.com" required>
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="field">
+                        <label class="label">آدرس</label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="نام خیابان و پلاک " required>
+                        </div>
+                    </div>
+
+
+                    <div class="field">
+                        <div class="control">
+                            <input type="text" class="input" placeholder="آدرس دوم (اختیاری)">
+                        </div>
+                    </div>
+
+
+                    <div class="columns is-multiline">
+
+                        <div class="column is-6-tablet is-4-desktop">
+                            <label class="label">کد پستی</label>
+                            <div class="control">
+                                <input type="text" class="input" placeholder="مثال 7954323765" required>
+                            </div>                    
+                        </div>
+
+
+                        <div class="column is-6-tablet is-4-desktop">
+                            <label class="label">َشهر</label>
+                           <div class="control">
+                                <input type="text" class="input" placeholder="مثال تهران" required>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="column is-6-tablet is-4-desktop">
+                            <label class="label">کشور</label>
+                           <div class="control">
+                               <div class="select">
+                                   <select>
+                                       <option>-- انتخاب کشور --</option>
+                                       <option>ایران</option>
+                                       <option>ترکیه</option>
+                                       <option>ارمنستان</option>
+                                   </select>
+                               </div>
+                           </div>
+                        </div>
+
+                    </div>
+               
+
+
+                    <div class="field" dir="ltr">
+                        <div class="buttons">
+                            <button class="button is-medium is-success">ایجاد مشتری</button>
+                            <button class="button is-medium is-light">لغو</button>
+                        </div>
+                    </div>
+                   
+                </form>
+
+            </div>
+        </div>
+    </Section>
+
+
+</body>
+
+</html>

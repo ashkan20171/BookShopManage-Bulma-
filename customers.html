@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سیستم مدیریت فروش کتاب</title>
+    <link rel="stylesheet" href="css/bulma-rtl.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar has-shadow is-light" dir="ltr">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>سیستم مدیریت فروش کتاب</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        ashkan_mataee
+                    </div>
+                    <div class="navbar-dropdown">
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>پروفایل</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>گزارشات</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>خروج</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <Section class="section" dir="ltr">
+        <div class="columns">
+            <!-- main menu start -->
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <nav class="menu" dir="rtl">
+                    <p class="menu-label">
+                        منوی اصلی
+                    </p>
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="dashbord.html">
+                                <span class="icon">
+                                    <i class="fas fa-digital-tachograph"></i>
+                                </span>
+                                داشبورد
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="books.html">
+                                <span class="icon">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                                کتاب ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="customers.html" class="is-active">
+                                <span class="icon">
+                                    <i class="fas fa-address-book"></i>
+                                </span>
+                                مشتری ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="orders.html">
+                                <span class="icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                سفارشات
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- main menu end -->
+
+           
+            <div class="column" dir="rtl">
+
+                <h1 class="title">مشتری ها</h1>
+                <!-- Toolbar Start -->
+                <nav class="level" dir="ltr">
+
+                    <div class="level-left">
+
+                        <div class="level-item">
+                            <p class="subtitle">
+                                تعداد <strong> 3 </strong>
+                            </p>
+                        </div>
+
+                        <p class="level-item">
+                            <a href="new-customer.html" class="button is-success">جدید</a>
+                        </p>
+
+                        <div class="level-item is-hidden-tablet-only">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input type="text" class="input" placeholder="نام ، ایمیل">
+                                </p>
+                                <p class="control">
+                                    <button class="button">
+                                        جستجو
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="level-right">
+                       <p class="level-item"><strong>همه</strong></p>
+                       <p class="level-item"><a>با سفارش</a></p>
+                       <p class="level-item"><a>بدون سفارش</a></p>
+                    </div>
+                </nav>
+                <!-- Toolbar End -->
+                
+
+                <!-- table customer start -->
+                <table class="table is-hoverable is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th class="is-narrow">
+                                <input type="checkbox">
+                            </th>
+                            <th>نام و نام خانوادگی</th>
+                            <th>ایمیل</th>
+                            <th>شهر</th>
+                            <th>سفارشات</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                       <tr>
+                        <th class="is-narrow">
+                            <input type="checkbox">
+                        </th>
+                        <th>نام و نام خانوادگی</th>
+                        <th>ایمیل</th>
+                        <th>شهر</th>
+                        <th>سفارشات</th>
+                        <th>عملیات</th>
+                       </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <a href="edit-customer.html">
+                                    <strong>مهدی شرافت</strong>
+                                </a>
+                            </td>
+                            <td><code>mehdi_shrft</code></td>
+                            <td>همدان</td>
+                            <td>
+                                <a href="customer-orders.html">2</a>
+                            </td>
+                            <td>
+                                <div class="buttons">
+                                    <a class="button is-small is-danger">حذف</a>
+                                    <a class="button is-small is-warning" href="edit-customer.html">ویرایش</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>
+                                <a href="edit-customer.html">
+                                    <strong> ابراهیم ساعی</strong>
+                                </a>
+                            </td>
+                            <td><code>ebrahim_saei@yahoo.com</code></td>
+                            <td>قم</td>
+                            <td>
+                                <a href="customer-orders.html">5</a>
+                            </td>
+                            <td>
+                                <div class="buttons">
+                                    <a class="button is-small is-danger">حذف</a>
+                                    <a class="button is-small is-warning" href="edit-customer.html">ویرایش</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <!-- pagination start -->
+                <nav class="pagination" dir="ltr">
+                    <a  class="pagination-previous">قبلی</a>
+                    <a  class="pagination-next">صفحه بعدی</a>
+                    <ul class="pagination-list">
+                        <li>
+                            <a class="pagination-link">1</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">45</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link is-current">46</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link">47</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">86</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </Section>
+
+
+</body>
+
+</html>

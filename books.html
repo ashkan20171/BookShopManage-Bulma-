@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سیستم مدیریت فروش کتاب</title>
+    <link rel="stylesheet" href="css/bulma-rtl.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar has-shadow is-light" dir="ltr">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>سیستم مدیریت فروش کتاب</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        ashkan_mataee
+                    </div>
+                    <div class="navbar-dropdown">
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>پروفایل</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>گزارشات</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>خروج</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <Section class="section" dir="ltr">
+        <div class="columns">
+            <!-- main menu start -->
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <nav class="menu" dir="rtl">
+                    <p class="menu-label">
+                        منوی اصلی
+                    </p>
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="dashbord.html">
+                                <span class="icon">
+                                    <i class="fas fa-digital-tachograph"></i>
+                                </span>
+                                داشبورد
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="books.html" class="is-active">
+                                <span class="icon">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                                کتاب ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="customers.html">
+                                <span class="icon">
+                                    <i class="fas fa-address-book"></i>
+                                </span>
+                                مشتری ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="orders.html">
+                                <span class="icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                سفارشات
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- main menu end -->
+
+           
+            <div class="column" dir="rtl">
+
+                <h1 class="title">کتاب ها</h1>
+                <!-- Toolbar Start -->
+                <nav class="level" dir="ltr">
+
+                    <div class="level-left">
+
+                        <div class="level-item">
+                            <p class="subtitle">
+                                تعداد <strong> 6 </strong>
+                            </p>
+                        </div>
+
+                        <p class="level-item">
+                            <a href="new-book.html" class="button is-success">جدید</a>
+                        </p>
+
+                        <div class="level-item is-hidden-tablet-only">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input type="text" class="input" placeholder="نام کتاب, ISBN">
+                                </p>
+                                <p class="control">
+                                    <button class="button">
+                                        جستجو
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="level-right">
+                        <div class="level-item">
+                            سفارشات بر اساس
+                        </div>
+                        <div class="level-item">
+                            <div class="select">
+                                <select>
+                                    <option>تاریخ انتشار</option>
+                                    <option>قیمت</option>
+                                    <option>تعداد صفحه</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Toolbar End -->
+                <!-- Books items start -->
+                <div class="columns is-multiline" >
+                    
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-right">
+                                    <img src="images/mellat.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            ملت عشق
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        29.000 تومان
+                                    </p>
+                                    <div class="content">
+                                        510 صفحه
+                                        <br>
+                                        ISBN: 978-964-311-919-5
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-right">
+                                    <img src="images/raz.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            راز
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        42.000 تومان
+                                    </p>
+                                    <div class="content">
+                                        215 صفحه
+                                        <br>
+                                        ISBN: 978-600-5138-52-8
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen" >
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="images/eskandar.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            اسکندر
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        66.000 تومان
+                                    </p>
+                                    <div class="content">
+                                        512 صفحه
+                                        <br>
+                                        ISBN: 978-600-119-939-4
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="images/Shab.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            شب‌های روشن
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        7.200 تومان
+                                    </p>
+                                    <div class="content">
+                                        126 صفحه
+                                        <br>
+                                        ISBN: 978-964-209-083-9
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-right">
+                                    <img src="images/kimiagar.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            کتاب کیمیاگر
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        12.500 تومان
+                                    </p>
+                                    <div class="content">
+                                        160 صفحه
+                                        <br>
+                                        ISBN: 978-964-172-096-6
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+
+                        <article class="box">
+                            <div class="media">
+                                <aside class="media-left">
+                                    <img src="images/mardi.jpg" width="80">
+                                </aside>
+                                <div class="media-content">
+                                    <p class="title">
+                                        <a href="#">
+                                            مردی به نام اُوِه
+                                        </a>
+                                    </p>
+                                    <p class="subtitle is-marginless has-text-success">
+                                        38.000 تومان
+                                    </p>
+                                    <div class="content">
+                                        392 صفحه
+                                        <br>
+                                        ISBN: 978-600-7141-77-9
+                                        <br>
+                                        <a href="edit-book.html">ویرایش</a>
+                                        <span>.</span>
+                                        <a href="#">حذف</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+                <!-- Books items End  -->
+
+                <!-- pagination start -->
+                <nav class="pagination" dir="ltr">
+                    <a  class="pagination-previous">قبلی</a>
+                    <a  class="pagination-next">صفحه بعدی</a>
+                    <ul class="pagination-list">
+                        <li>
+                            <a class="pagination-link">1</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">45</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link is-current">46</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link">47</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">86</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </Section>
+
+
+</body>
+
+</html>

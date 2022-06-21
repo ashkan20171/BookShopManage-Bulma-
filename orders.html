@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سیستم مدیریت فروش کتاب</title>
+    <link rel="stylesheet" href="css/bulma-rtl.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar has-shadow is-light" dir="ltr">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>سیستم مدیریت فروش کتاب</small>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        ashkan_mataee
+                    </div>
+                    <div class="navbar-dropdown">
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>پروفایل</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>گزارشات</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span>خروج</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-sign-out-alt"></i>
+                                </span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <Section class="section" dir="ltr">
+        <div class="columns">
+            <!-- main menu start -->
+            <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+                <nav class="menu" dir="rtl">
+                    <p class="menu-label">
+                        منوی اصلی
+                    </p>
+                    <ul class="menu-list">
+
+                        <li>
+                            <a href="dashbord.html">
+                                <span class="icon">
+                                    <i class="fas fa-digital-tachograph"></i>
+                                </span>
+                                داشبورد
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="books.html">
+                                <span class="icon">
+                                    <i class="fas fa-book"></i>
+                                </span>
+                                کتاب ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="customers.html" >
+                                <span class="icon">
+                                    <i class="fas fa-address-book"></i>
+                                </span>
+                                مشتری ها
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="orders.html" class="is-active">
+                                <span class="icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </span>
+                                سفارشات
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- main menu end -->
+
+           
+            <div class="column" dir="rtl">
+
+                <h1 class="title">سفارشات</h1>
+                <!-- Toolbar Start -->
+                <nav class="level" dir="ltr">
+
+                    <div class="level-left">
+
+                        <div class="level-item">
+                            <p class="subtitle">
+                                تعداد <strong> 2 </strong>
+                            </p>
+                        </div>
+
+                      
+
+                        <div class="level-item is-hidden-tablet-only">
+                            <div class="field has-addons">
+                                <p class="control">
+                                    <input type="text" class="input" placeholder="مشتری ، شماره سفارش">
+                                </p>
+                                <p class="control">
+                                    <button class="button">
+                                        جستجو
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="level-right">
+                       <p class="level-item"><strong>همه</strong></p>
+                       <p class="level-item"><a>با سفارش</a></p>
+                       <p class="level-item"><a>بدون سفارش</a></p>
+                    </div>
+                </nav>
+                <!-- Toolbar End -->
+                
+
+                <!-- table customer start -->
+                <table class="table is-hoverable is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>شماره سفارش</th>
+                            <th>نام و نام خانوادگی</th>
+                            <th>تاریخ و زمان شفارش</th>
+                            <th>تعداد کتاب</th>
+                            <th>وضعیت</th>
+                            <th class="has-text-right"> قیمت کل (تومان) </th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>شماره سفارش</th>
+                            <th>نام و نام خانوادگی</th>
+                            <th>تاریخ و زمان شفارش</th>
+                            <th>تعداد کتاب</th>
+                            <th>وضعیت</th>
+                            <th class="has-text-right"> قیمت کل (تومان) </th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>
+                               <a href="edit-order.html"><strong>754364</strong></a>
+                            </td>
+                            <td>
+                                <a href="edit-customer.html">
+                                    مهدی شرافت
+                                </a>
+                            </td>
+                            <td>1401/03/25 - 15:22</td>
+                            <td>2</td>
+                            <td>
+                               <span class="tag is-warning">در حال پردازش</span>
+                            </td>
+                            <td class="has-text-right">
+                                56000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                               <a href="edit-order.html"><strong>654329</strong></a>
+                            </td>
+                            <td>
+                                <a href="edit-customer.html">
+                                    ابراهیم ساعی 
+                                </a>
+                            </td>
+                            <td>1401/03/25 - 17:38</td>
+                            <td>1</td>
+                            <td>
+                               <span class="tag is-success">با موفقیت</span>
+                            </td>
+                            <td class="has-text-right">
+                                25000
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- pagination start -->
+                <nav class="pagination" dir="ltr">
+                    <a  class="pagination-previous">قبلی</a>
+                    <a  class="pagination-next">صفحه بعدی</a>
+                    <ul class="pagination-list">
+                        <li>
+                            <a class="pagination-link">1</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">45</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link is-current">46</a>
+                        </li>
+                        <li>
+                            <a class="pagination-link">47</a>
+                        </li>
+                        <li>
+                            <span class="pagination-ellipsis">&hellip;</span>
+                        </li>
+                        <li>
+                            <a class="pagination-link">86</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </Section>
+
+
+</body>
+
+</html>
